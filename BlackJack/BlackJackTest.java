@@ -9,8 +9,6 @@ public class BlackJackTest {
         BlackJack testing = new BlackJack();
         assertNull(testing.getblackJack())
 
-
-
     }
 
 }

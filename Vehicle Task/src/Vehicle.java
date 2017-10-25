@@ -31,8 +31,8 @@ public class Vehicle {
     return year;
 
     void print() {
-        System.out.println("Vehicle Type: " + vehicleType + "number ")
-
+        System.out.println("Vehicle Type: " + vehicleType + ", numberOfSeats: " + numberOfSeats + ", numberOfWheels: " + numberOfWheels +)
+", Year " + year);
 
    }
 

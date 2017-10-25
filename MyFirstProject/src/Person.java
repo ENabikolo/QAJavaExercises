@@ -33,7 +33,6 @@ public class Person {
     }
 
 }
-
 /*
 ArrayList<object> al = new ArrayList<Object>();
   public void doStuff(person p){
