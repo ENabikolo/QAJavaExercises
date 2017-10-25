@@ -14,12 +14,10 @@ public class HelloWorld {                     //"public" is an access modifier. 
         System.out.println(addNum(a, b));
         System.out.println(addNumConditional(a, b, true));
 
-
         for (int i = 0; i < 10; i++){
             System.out.println(addNumConditional2(0, i));
 
         }
-
     }
 
     //Create a method that accepts a string as a parameter and then outputs that to the console, then calls that method from your main method.
