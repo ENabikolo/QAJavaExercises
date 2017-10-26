@@ -1,34 +1,43 @@
-public class Vehicle {
+public abstract class Vehicle {
 
     //Constructor
-    public Vehicle(){
+    private int year;
+    private String vehicleType;
+    private int numberOfSeats;
+    private int numberOfWheels;
 
-    }
-
-       private int year;
-        public String vehicleType;
-        public int numberOfSeats;
-        int numberOfWheels;
-
-        public Vehicle (int year, String vehicleType, int numberOfSeats, int numberOfWheels);
-        this. vehicleType = vehicleType;
-        this.numberOfSeats = numberOfSeats;
-        this.numberOfWheels = numberOfWheels;
-        this. year = year;
-
+// if something's not changing, you dont need a setter.
 
 }
-    String getvehicleType() {
+    public String getvehicleType() {
         return vehicleType;
     }
-    int getNumberOfSeats() {
+
+
+
+    public void setNumberOfWheels(int numberOfWheels) {
+        this.numberOfWheels = numberOfWheels;
+    }
+
+    public int getNumberOfSeats() {
         return numberOfSeats;
     }
-    int getNumberOfWheels() {
+
+    public void setVehicleType(String vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
+    }
+    public int getNumberOfWheels() {
         return numberOfWheels;
     }
-    int getYear() {
-    return year;
+    public int getYear() {
+        return year;
+    }
+    public void setYear(int year) {
+        this.year = year; }
 
     void print() {
         System.out.println("Vehicle Type: " + vehicleType + ", numberOfSeats: " + numberOfSeats + ", numberOfWheels: " + numberOfWheels +)

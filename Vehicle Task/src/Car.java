@@ -1,48 +1,54 @@
 public class Car extends Vehicle {
 
+    //A car is a vehicle so it inherits all non-private Vehicle properties
+    private String Make;
+    private int numberOfDoors;
+    private boolean isConvertible;
+    private boolean isAutomatic;
 
-    public Car() {
-        super();
-        //A car is a vehicle so it inherits all non-private Vehicle properties
-       public int numberOfSeats = 0;
-        String Make;
-        int numberOfDoors;
-        boolean isConvertible;
-        boolean isAutomatic;
-
-        //Constructor. Stores nODoors,
-    public Car( int numberOfSeats, String Make, int numberOfDoors,  boolean isConvertible,  boolean isAutomatic){
-            this.numberOfSeats = numberOfSeats;
+    //Constructor. Stores nODoors,
+    public Car( int numberOfSeats, String Make, int numberOfDoors,  boolean isConvertible,  boolean isAutomatic int year){
+            this.setNumberOfSeats(numberOfSeats);
+            this.setYear(year);
+            this.setVehicleType("Car");
+            this.setNumberOfWheels(4);
             this.Make = Make;
-            this.numberOfDoors = numberOfDoors;
             this.isConvertible = isConvertible;
             this.isAutomatic = isAutomatic;
-
-        }
     }
 
-    Car car = new Car();
-    Vehicle vehicle = car;
-
-}
-
-    public int getNumberOfSeats() {
-        return this.numberOfSeats;
-    }
     public String getMake() {
-        return this.Make;
+        return Make;
+    }
+
+    public void setMake(String make) {
+        Make = make;
     }
 
     public int getNumberOfDoors() {
-        return this.numberOfDoors;
+        return numberOfDoors;
     }
-    public boolean getisConvertible() {
-        return this.isConvertible;
+
+    public void setNumberOfDoors(int numberOfDoors) {
+        this.numberOfDoors = numberOfDoors;
     }
+
+    public boolean isConvertible() {
+        return isConvertible;
+    }
+
+    public void setConvertible(boolean convertible) {
+        isConvertible = convertible;
+    }
+
     public boolean isAutomatic() {
-        return this.isAutomatic;
+        return isAutomatic;
     }
 
-
+    public void setAutomatic(boolean automatic) {
+        isAutomatic = automatic;
     }
 }
+
+
+
