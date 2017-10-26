@@ -26,7 +26,7 @@ public class PersonTest {
 
 
     @Test
-    public void testgetName() {
+    public void getName() { p.getName();{
         assertEquals(name, p.getName());
     }
 
