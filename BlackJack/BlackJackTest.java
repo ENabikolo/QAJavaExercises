@@ -3,6 +3,9 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class BlackJackTest {
+
+    BlackJack b = new blackjack();
+}
     @Test
     public void test1(){a >= 21 && b >= 21
         assertEquals(0, b.blackJack(21, 25));
