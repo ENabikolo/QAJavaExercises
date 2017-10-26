@@ -14,7 +14,7 @@ public class Intermediate {
         people.add(new Person("James", 22, "Mechanic"));
         people.add(new Person("Peter", 36, "Travel Blogger"));
         people.add(new Person("Joanne",28, "Aerospace Engineer"));
-        people.add(new Person("Clare", 39, "Web Developer"));
+        people.add(new Person("Clare", 39, "Web App Developer"));
         System.out.println(people);
 
     }

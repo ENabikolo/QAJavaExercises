@@ -39,7 +39,7 @@ public class Person {
             return age;
         }
 
-        public String jobTitle() {
+        public String getjobTitle() {
 
             return jobTitle;
         }

@@ -1,41 +1,30 @@
-package BlackJack;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class BlackJackTest {
     @Test
-    public void testBlackJack(){
-        BlackJack testing = new BlackJack();
-        assertNull(testing.getblackJack())
-
-
-
+    public void test1(){a >= 21 && b >= 21
+        assertEquals(0, b.blackJack(21, 25));
     }
 
-}
-public class BlackJack {
-
-    public static void main(String[] args) {
-
-        blackJack(15, 9);
+    @Test
+    public void test2(){ b >= 21
+    assertEquals(9, b.blackJack(9, 22));
     }
 
-    public static int blackJack( int a, int b){
-        if (a >= 21 && b >= 21) {
-            return 0;
-        } else if (b >= 21) {
-            return a;
-        } else if (a >= 21) {
-            return b;
-        } else {
-            if (a < b) {
-                return b;
-            } else {
-                return a;
-
-            }
-        }
-
+    @Test
+    public void test3(){ a >= 21
+    assertEquals(15, b.blackJack(21,15));
     }
-}
+
+    @Test
+    public void test4(){ a < b
+    assertEquals(16, b.blackJack(14,16))
+    }
+
+
+    @Test
+    public void test2(){ a > b
+    assertEquals(20, b.blackJack(20,19));
+    }

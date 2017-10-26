@@ -1,50 +1,82 @@
-public class Vehicle {
+public abstract class Vehicle {
 
     //Constructor
-    public Vehicle(){
+    private double price;
+    private int year;
+    private String vehicleType;
+    private int numberOfSeats;
+    private int numberOfWheels;
+    private boolean isFixed;
+    private int Id;
 
+
+    // if something's not changing, you don't need a setter.
+
+    public void fixVehicle() {
+        if (!this.isFixed) {
+            this.isFixed = true; }
     }
 
-       private int year;
-        public String vehicleType;
-        public int numberOfSeats;
-        int numberOfWheels;
+    public int getYear() {
+        return year;
+    }
 
-        public Vehicle (int year, String vehicleType, int numberOfSeats, int numberOfWheels);
-        this. vehicleType = vehicleType;
-        this.numberOfSeats = numberOfSeats;
-        this.numberOfWheels = numberOfWheels;
-        this. year = year;
-
-
-}
-    String getvehicleType() {
+    public void setYear(int year) {
+        this.year = year;
+    }
+    public String getVehicleType() {
         return vehicleType;
     }
-    int getNumberOfSeats() {
+
+    public void setVehicleType(String vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+
+    public int getNumberOfSeats() {
         return numberOfSeats;
     }
-    int getNumberOfWheels() {
+
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
+    }
+
+    public int getNumberOfWheels() {
         return numberOfWheels;
     }
-    int getYear() {
-    return year;
 
-    void print() {
-        System.out.println("Vehicle Type: " + vehicleType + "number ")
-
-
-   }
-
- /*
-    public class Car extends Vehicle{
-    @override
-
+    public void setNumberOfWheels(int numberOfWheels) {
+        this.numberOfWheels = numberOfWheels;
     }
-    public class Boat extends Vehicle{}
-    public void doBoatStuff(){
-    System.out.println("Doing boat stuff");
-    }
-*/
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public boolean isFixed() {
+        return isFixed;
+    }
+
+    public void setFixed(boolean fixed) {
+        isFixed = fixed;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int Id) {
+        this.Id = Id;
+    }
 }
+
+   /* void print() {
+        System.out.println("Vehicle Type: " + vehicleType + ", numberOfSeats: " + numberOfSeats + ", numberOfWheels: " + numberOfWheels +)
+", Year " + year);
+
+   } */
+
+
