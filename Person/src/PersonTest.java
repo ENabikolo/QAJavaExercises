@@ -1,5 +1,6 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
+import org.junit.Before;
 
 import java.util.ArrayList;
 
@@ -10,24 +11,33 @@ public class PersonTest {
     String jobTitle;
 
     @Before
-    person p = new (name, age, jobTitle);
-    name = "James";
-    age = 22;
-    jobTitle = "Mechanic";
+    public void setUp (){
+        Person p = new Person(name, age, jobTitle);
+        name = "James";
+        age = 22;
+        jobTitle = "Mechanic";
+
+        ArrayList<Person> p = new ArrayList<Person>();
+        p.add(new Person("James", 22, "Mechanic"));
+        p.add(new Person("Peter", 36, "Travel Blogger"));
+        p.add(new Person("Joanne",28, "Aerospace Engineer"));
+        p.add(new Person("Clare", 39, "Web Developer"));
+        System.out.println(p);
+
 
     @Test
     public void testgetName() {
-        assertEquals(name, test.getName());
+        assertEquals(name, p.getName());
     }
 
- @Test
+     @Test
     public void testgetAge(){
 
-        assertequals(age, testing.getAge());
+        assertEquals(age, p.getAge());
  }
 
- @Test
+    @Test
     public void testgetjobTitle(){
-     assertequals(jobTitle, testing.getjobTitle());
+     assertEquals(jobTitle, tes.getjobTitle());
  }
 }

@@ -17,16 +17,8 @@ public class Person {
 
         }
 
-
-        ArrayList<Person> people = new ArrayList<Person>();
-        people.add(new Person("James", 22, "Mechanic"));
-        people.add(new Person("Peter", 36, "Travel Blogger"));
-        people.add(new Person("Joanne",28, "Aerospace Engineer"));
-        people.add(new Person("Clare", 39, "Web Developer"));
-        System.out.println(people);
-
         public String toString() {
-            return String.format("My name is : " + name + " and I am " + age + " :years old. I work as a " + jobTitle);
+            return ("Name: " + name + " Age " + age + " I am a " + jobTitle);
         }
 
         public String getName() {
